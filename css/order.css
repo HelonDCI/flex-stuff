@@ -1,0 +1,51 @@
+html {
+  background: #fce4ec;
+  font-family: Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+}
+
+/* My main Section */
+.flex-container {
+  display: flex;
+}
+
+.item {
+  font-size: 1.5rem;
+  line-height: 1;
+  text-align: center;
+  padding: 3rem 1rem;
+  background-color: pink;
+  border: 5px solid #e91e63;
+  color: rebeccapurple;
+  margin: 6px;
+}
+
+article.item {
+  border: 6px solid rebeccapurple;
+  padding: 80px;
+  flex: 2;
+}
+
+.main-article {
+  order: 2;
+}
+
+.sidebar-left {
+  flex: 1;
+  order: 1;
+}
+
+.sidebar-right {
+  flex: 1;
+  order: 3;
+}
+
+@media screen and (max-width: 575px) {
+  /* My main section */
+  .flex-container {
+    flex-direction: column;
+  }
+  .sidebar-left {
+    order: 2;
+  }
+}
